@@ -13,7 +13,10 @@ permissions:
 jobs:
   auto-merge-dependabot-prs:
     runs-on: ubuntu-latest
+
+    # only run when dependabot created (or updated) the PR
     if: ${{ github.actor == 'dependabot[bot]' }}
+
     steps:
       - name: Dependabot metadata
         id: metadata
