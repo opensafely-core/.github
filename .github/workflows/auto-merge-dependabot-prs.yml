@@ -11,7 +11,7 @@ permissions:
   pull-requests: write
 
 jobs:
-  dependabot:
+  auto-merge-dependabot-prs:
     runs-on: ubuntu-latest
     if: ${{ github.actor == 'dependabot[bot]' }}
     steps:
