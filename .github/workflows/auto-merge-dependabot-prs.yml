@@ -1,6 +1,10 @@
 name: Dependabot auto-merge
 
-on: pull_request
+on:
+  workflow_call:
+    secrets:
+      token:
+        required: true
 
 permissions:
   contents: write
@@ -15,16 +19,16 @@ jobs:
         id: metadata
         uses: dependabot/fetch-metadata@v1.3.3
         with:
-          github-token: "${{ secrets.GITHUB_TOKEN }}"
+          github-token: "${{ secrets.token }}"
 
       - name: Approve a PR
         run: gh pr review --approve "$PR_URL"
         env:
           PR_URL: ${{ github.event.pull_request.html_url }}
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.token }}
 
       - name: Enable auto-merge for Dependabot PRs
         run: gh pr merge --auto --merge "$PR_URL"
         env:
           PR_URL: ${{ github.event.pull_request.html_url }}
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.token }}
