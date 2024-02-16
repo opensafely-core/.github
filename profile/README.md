@@ -2,7 +2,7 @@
 
 Welcome to the OpenSAFELY Core GitHub page. This site is where to find all code relating to the [OpenSAFELY](https://www.opensafely.org/) platform. Each repository contains code for a particular component of the platform.
 
-If you're looking for code for research conducted using the platform, visit our[ OpenSAFELY GitHub organisation](https://github.com/OpenSAFELY). 
+If you're looking for code for research conducted using the platform, visit our [OpenSAFELY GitHub page](https://github.com/OpenSAFELY). 
 
 To find out more, visit our [website](https://www.opensafely.org/) and [documentation](https://docs.opensafely.org/).
 
