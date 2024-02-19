@@ -6,4 +6,5 @@ If you're looking for code for research conducted using the platform, visit our 
 
 To find out more, visit our [website](https://www.opensafely.org/) and [documentation](https://docs.opensafely.org/).
 
-Please note that while we work in the open and make the code powering the OpenSAFELY platform available under an open source licence, we aren’t currently accepting external contributions.
+## Contributing
+While we work in the open and make the code powering the OpenSAFELY platform available under an open source licence, we aren’t currently accepting external contributions.
