@@ -1,3 +1,4 @@
-# Shared Workflows
+# .github
 
-This is a repository of workflows for the OpenSAFELY team to use across the repositories in [opensafely-core](https://github.com/opensafely-core/).
+This repository holds the `opensafely-core` organization profile.
+
